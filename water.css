@@ -1,9 +1,16 @@
+body{
+  background-image: url("https://www.teahub.io/photos/full/51-514249_rivers-in-nepal-essay.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 h3{
   font-family: Calibri; 
   font-size: 25pt;         
   font-style: normal; 
   font-weight: bold; 
-  color:black;
+  color:rgb(235, 235, 235);
   text-align: center; 
   text-decoration: underline
 }
@@ -14,19 +21,15 @@ table{
   font-style: normal;
   font-weight: bold;
   text-align: center;
-  background-color: rgba(105, 88, 216, 0.938); 
+  background-color:#024a4d;
   border-collapse: collapse; 
-  border: 2px solid navy;
+  border-radius: 30px;
   margin: auto;
-  height:50px;
+  height:30px;
+  width:250px;
+  
 }
 table.inner{
   border: 0px;
 }
-	.background-image{
-		background-image: url('./water.jpg') ;
-		background-size: contain;
-		background-repeat: no-repeat;
-		width: 200px;
-		height: 100vh;
-	}
+
