@@ -1,0 +1,85 @@
+body{
+    background-image: url("https://www.teahub.io/photos/full/51-514249_rivers-in-nepal-essay.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  h3{
+    font-family: Calibri; 
+    font-size: 25pt;         
+    font-style: normal; 
+    font-weight: bold; 
+    color:rgb(245, 239, 239);
+    text-align: center; 
+    text-decoration: underline
+  }
+  
+  table{
+    font-family: Calibri; 
+    color:rgb(253, 246, 246); 
+    font-size: 11pt; 
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+    background-color:#0a969b;
+    border-collapse: collapse; 
+    border-radius: 30px;
+    margin: auto;
+    height:30px;
+    width:250px;
+  }
+  h2{
+        font-family: Calibri; 
+        font-size: 25pt;         
+        font-style: normal; 
+        font-weight: bold; 
+        color:rgb(12, 12, 12);
+        text-align: center; 
+        text-decoration: underline
+      }
+
+  
+
+  table.inner{
+    border: 0px;
+  }
+  
+  
+  .button{
+   
+    background-color: aqua;
+  
+  }
+  .tab{
+    height: 500px;
+    width: 200px;
+  }
+  .form{
+    width: 300px;
+    padding: 30px;
+    border-radius: 30px;
+    border: 5px solid gray;
+    margin: 0;
+    background-color: #0a969b;
+    color: white;
+    margin-left: 450px;
+    text-align: center;
+    
+  
+  }
+
+  .print{
+    background: white;
+    border-radius: 5px;
+    width: 100px;
+    color:  #0a969b;
+ 
+  }
+  label{
+    width: 200px;
+    display: inline-block;
+  }
+  input{
+    border-radius: 5px;
+  }

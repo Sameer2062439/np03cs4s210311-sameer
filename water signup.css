@@ -10,26 +10,65 @@ h3{
   font-size: 25pt;         
   font-style: normal; 
   font-weight: bold; 
-  color:rgb(235, 235, 235);
+  color:rgb(245, 239, 239);
   text-align: center; 
   text-decoration: underline
 }
 table{
   font-family: Calibri; 
-  color:white; 
+  color:rgb(253, 246, 246); 
   font-size: 11pt; 
   font-style: normal;
   font-weight: bold;
   text-align: center;
-  background-color:#024a4d;
+  background-color:#0a969b;
   border-collapse: collapse; 
   border-radius: 30px;
   margin: auto;
   height:30px;
   width:250px;
-  
+
 }
 table.inner{
   border: 0px;
 }
 
+
+.button{
+ 
+  background-color: aqua;
+
+}
+.tab{
+  height: 500px;
+  width: 200px;
+}
+.form{
+  width: 400px;
+  padding: 30px;
+  border-radius: 30px;
+  border: 5px solid gray;
+  margin: 0;
+  background-color: white;
+  margin-left: 500px;
+  
+
+}
+.head{
+  width: 100px;
+}
+.submit{
+  background: #0a969b;
+  border-radius: 5px;
+}
+.reset{
+  background: #0a969b;
+  border-radius: 5px;
+}
+label{
+  width: 200px;
+  display: inline-block;
+}
+input{
+  border-radius: 5px;
+}
