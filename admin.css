@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 10px;
+    background-image: url(bill.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+header{
+    padding: 20px;
+    background: dodgerblue;
+    color: black;
+    border-radius: 20px;
+}
+
+section{
+    width: 20%;
+    float: left;
+    height: 500px;
+    background: #65B6BB;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+ul li{
+    padding: 20px;
+    border-bottom: 2px solid #65B6BB;
+}
+ul li:hover{
+    background: blue;
+    color: white;
+}
+
+adminLogo{
+    
+    border-radius: 50px;
+}
+
+table {
+    width: 250px;
+    float: center;
+    padding: 300px;
+    
+}
+th {
+    text-align: left;
+}
+
+table,th,td {
+    border: 1px solid #95b4cb;
+    border-collapse: collapse;
+}
+th,td {
+    padding: 10px;
+}
+
+
+
+tr:nth-child(even){
+    background-color: #fff;
+    height: 100px;
+}
+
+tr:nth-child(odd){
+    background-color: dodgerblue;
+
+    
+}
+
+tr:nth-child(1n+3){
+    cursor: pointer;
+    
+}
+
+tr:nth-child(1n+3):hover{
+    background: blue;
+    color: white;
+
+}
+.text{
+    padding: 70%;
+    position: absolute;
+}

@@ -1,0 +1,30 @@
+body{
+  background-image: url("water.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+h3{
+  font-family: Calibri; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:black;
+  text-align: center; 
+  text-decoration: underline
+}
+table{
+  font-family: Calibri; 
+  color:white; 
+  font-size: 11pt; 
+  font-style: normal;
+  font-weight: bold;
+  text-align: center;
+  background-color: #59788e; 
+  border-collapse: collapse; 
+  border: 2px solid navy;
+  margin: auto;
+  height:50px;
+}
+table.inner{
+  border: 0px;
+}
