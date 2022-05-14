@@ -1,5 +1,5 @@
 <?php 
-   include('conn.php');
+   include('database connection.php');
     
    ?>
 <!DOCTYPE html>
@@ -34,9 +34,9 @@
                   <thead>
                      <tr>
                         <th>No.</th>
-                        <th>Name</th>
-                        <th style="width: 31%">Rate</th>
-                        <th>Amount</th>
+                        <th>client name</th>
+                        <th style="width: 31%">liter of water</th>
+                        <th>amount</th>
                      </tr>
                   </thead>
                   <tbody>
@@ -56,10 +56,10 @@
                            </select>
                         </td>
                         <td>
-                           <p id="Rate"></p>
+                           <p id="liter of water"></p>
                         </td>
                         <td>
-                           <p id="Amount"></p>
+                           <p id="amount"></p>
                         </td>
                         <td><button id="add" class="btn btn-primary">Add</button></td>
                      </tr>
@@ -89,9 +89,9 @@
                         <thead>
                            <tr>
                               <th> No.</th>
-                              <th>Clients Name</th>
-                              <th>Rate</th>
-                              <th class="text-center">Amount</th>
+                              <th>Clients client name</th>
+                              <th>liter of water</th>
+                              <th class="text-center">amount</th>
                               <th class="text-center">Total</th>
                            </tr>
                         </thead>
@@ -142,7 +142,7 @@
           dataType:'json',
           success:function(data)
             {
-               $('#Amount').text(data.Amount);
+               $('#amount').text(data.amount);
             
             }
        });
@@ -153,8 +153,8 @@
      $('#add').on('click',function(){
     
         var name = $('#clientsname').val();
-        var Rate = $('#Rate').val();
-        var Amount = $('#Amount').text();
+        var liter of water = $('#liter of water').val();
+        var amount = $('#amount').text();
  
         if(name == 0)
         {
@@ -171,14 +171,14 @@
           var total = 0;
        
           $("#receipt_bill").each(function () {
-          var total =  Amount;
+          var total =  amount;
           var subTotal = 0;
           subTotal += parseInt(total);
           
-          var table =   '<tr><td>'+ count +'</td><td>'+ name + '</td><td>' + Rate + '</td><td>' + Amount + '</td><td><strong><input type="hidden" id="total" value="'+total+'">' +total+ '</strong></td></tr>';
+          var table =   '<tr><td>'+ count +'</td><td>'+ clients name + '</td><td>' + liter of water + '</td><td>' + amount + '</td><td><strong><input type="hidden" id="total" value="'+total+'">' +total+ '</strong></td></tr>';
           $('#new').append(table)
  
-           // Code for Sub Total of Amount 
+           // Code for Sub Total of amount 
             var total = 0;
             $('tbody tr td:last-child').each(function() {
                 var value = parseInt($('#total', this).val());
@@ -192,7 +192,7 @@
               var Tax = (total * 5) / 100;
               $('#taxAmount').text(Tax.toFixed(2));
  
-             // Code for Total Payment Amount
+             // Code for Total Payment amount
  
              var Subtotal = $('#subTotal').text();
              var taxAmount = $('#taxAmount').text();

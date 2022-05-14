@@ -10,7 +10,7 @@ session_start();
 // creat connection
 $data=mysqli_connect($host,$user,$password,$db);
 
-// check connection
+// if connection is wrong, it shows connection error
 if($data===false)
 {
 	die("connection error");
@@ -30,13 +30,14 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 	$result=mysqli_query($data,$sql);
 
 	$row=mysqli_fetch_array($result);
-/* check the usertype condition is user or  admin. If usertpye is user, goes to userhome and if usertpye is admin, goes to adminhome page*/
+/* check the usertype condition is user or  admin. If usertpye is user, goes to userhome and 
+  if usertpye is admin, it takes us to admin dashboard page*/
 	if($row["usertype"]=="user")
 	{	
 
 		$_SESSION["username"]=$username;
         echo "USER";
-		header("location:user.php");
+		header("location:user.html");
 	}
 
 	elseif($row["usertype"]=="admin")
@@ -44,13 +45,13 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 
 		$_SESSION["username"]=$username;
 		
-		header("location:index.html");
+		header("location:admin dashboard.html");
 	}
 
 	else
 	{
 		echo "username or password incorrect";
-		header("location:admin.php");
+		header("location:login.php");
 	}
 
 }
@@ -91,7 +92,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 					<button>login</button>
 	
                     </div>	
-                    <p class="message">Not registered? <a href="water signup.html">Create an account</a></p>
+                    <p class="message">Not registered? <a href="signup.html">Create an account</a></p>
                 </form>
             </div>
         </div>

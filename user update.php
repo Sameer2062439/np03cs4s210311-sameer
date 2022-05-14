@@ -1,6 +1,6 @@
 <?php
 
- include 'conn.php';
+ include 'database connection.php';
 
  if(isset($_POST['done'])){
 
@@ -11,7 +11,7 @@
 
  $query = mysqli_query($con,$q);
 
- header('location:display.php');
+ header('location:user details.php');
  }
 
 ?>
@@ -19,6 +19,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<center> <h1 class="text-dark text-center"> Water Billing System</h1> </center>
  <title></title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,6 +29,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+    
 
  <div class="col-lg-6 m-auto">
  
@@ -46,6 +48,8 @@
  <input type="text" name="password" class="form-control"> <br>
 
  <button class="btn btn-success" type="submit" name="done"> Submit </button><br>
+
+ <button class="btn danger" type="submit" > cancel </button>
 
  </div>
  </form>

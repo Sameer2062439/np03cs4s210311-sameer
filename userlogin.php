@@ -1,31 +1,22 @@
 <?php
- include '../conn.php';
-
- //recieving form data
- if(isset($_POST["login"])){
+session_start();
+include 'database connection.php';
+if($_SERVER["REQUEST_METHOD"]=="POST"){
    $email = $_POST["email"];
    $password = $_POST["password"];
 
-  //check into database
-  //check users
-  $query = "SELECT * FROM employee WHERE email='$email' AND password='$password'";
-  $result = mysqli_query($conn, $query);
+  $query ="SELECT * FROM water WHERE email='$email' AND password='$password'";
+  $result = mysqli_query($con, $query);
   if ($row = mysqli_fetch_assoc($result)) {
-    echo "Username Already Exists.";
-    header("Location:http://localhost/hrs/Frontend/signup/index.html");
-  } else {
-    //insert form data into employee database
-    echo "Login successfull ";
+        
+        echo "Login successful";
+        $_SESSION["email"] = $email;
+        $_SESSION["password"] = $password;
 
-    //redirect 
-    header("Location:http://localhost/hrs/Frontend/signup/index.html");
-  }
-
-
-
-//redirect to login
-header("Location:http://localhost/hrs/Frontend/login/index.html");
-
-
- }
+        header("Location:http://localhost/water/user billl.html");
+    }else {
+               echo "Wrong email or password";
+               header("Location:http://localhost/water/user.html");
+     }
+ } 
 ?>

@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost","root","bill_receipt");
+$conn = mysqli_connect("localhost","root","water");
 
 // Check Connection
 if (mysql_connect_errno()) {

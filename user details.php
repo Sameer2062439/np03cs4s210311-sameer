@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<center> <h1 class="text-dark text-center"> Water Billing System</h1> </center>
+
  <title></title>
 
  <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,7 +20,7 @@
  <div class="container">
  <div class="col-lg-12">
  <br><br>
- <h1 class="text-primary text-center" > User details </h1>
+ <h1 class="text-dark text-center" > User details </h1>
  <br>
  <table  id="tabledata" class=" table table-striped table-hover table-bordered">
  
@@ -34,7 +36,7 @@
 
  <?php
 
- include 'conn.php'; 
+ include 'database connection.php'; 
  $q = "SELECT * FROM `water`";
 
  $query = mysqli_query($con,$q);
@@ -45,8 +47,8 @@
  <td> <?php echo $res['id'];  ?> </td>
  <td> <?php echo $res['email'];  ?> </td>
  <td> <?php echo $res['password'];  ?> </td>
- <td> <button class="btn-danger btn"> <a href="delete.php?id=<?php echo $res['id']; ?>" class="text-white"> Delete </a>  </button> </td>
- <td> <button class="btn-primary btn"> <a href="update.php?id=<?php echo $res['id']; ?>" class="text-white"> Update </a> </button> </td>
+ <td> <button class="btn-danger btn"> <a href="user delete.php?id=<?php echo $res['id']; ?>" class="text-white"> Delete </a>  </button> </td>
+ <td> <button class="btn-primary btn"> <a href="user update.php?id=<?php echo $res['id']; ?>" class="text-white"> Update </a> </button> </td>
 
  </tr>
 

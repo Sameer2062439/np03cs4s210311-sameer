@@ -1,8 +1,8 @@
 <?php 
-  include('conn.php');
+  include('database connection.php');
  
-   $sql = "SELECT * FROM orders WHERE 'Name'='".$_POST['Name']."'";
-   $query = mysqli_query($conn,$sql);
+   $sql = "SELECT * FROM water WHERE 'Name'='".$_POST['Name']."'";
+   $query = mysqli_query($con,$sql);
    while($row = mysqli_fetch_assoc($query))
    {
          $data = $row;
