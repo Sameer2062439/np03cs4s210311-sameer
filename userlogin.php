@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         $_SESSION["email"] = $email;
         $_SESSION["password"] = $password;
 
-        header("Location:http://localhost/water/user billl.html");
+        header("Location:http://localhost/water/user 1 billl.html");
     }else {
                echo "Wrong email or password";
                header("Location:http://localhost/water/user.html");

@@ -23,15 +23,18 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 {
 	$username=$_POST["username"];
 	$password=$_POST["password"];
-
+  
+// sql is querry of database. It is use for get data from database.
 
 	$sql="select * from login where username='".$username."' AND password='".$password."' ";
 
 	$result=mysqli_query($data,$sql);
 
 	$row=mysqli_fetch_array($result);
-/* check the usertype condition is user or  admin. If usertpye is user, goes to userhome and 
+
+/* check the usertype condition is user or  admin. If usertpye is user, goes to userpage and 
   if usertpye is admin, it takes us to admin dashboard page*/
+  
 	if($row["usertype"]=="user")
 	{	
 
