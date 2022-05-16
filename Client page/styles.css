@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2 {
+    color: #444;
+}
+
+h3 {
+    color: #999;
+}
+/* for the view button changes */
+.btn {
+    background: #2d94e9;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+/* change colour when hovering */
+.btn:hover {
+    color: #2d94e9;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid #2d94e9;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+
+table {
+    padding: 10px;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+/* for the side menu of the page */
+
+.side-menu {
+    position: fixed;
+    background: #2d94e9;
+    width: 20%;
+    min-height: 60%;
+
+    flex-direction: column;
+
+    top: 30%;
+    left: 3%;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* changes for the current page name */
+.side-menu .currentpage {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-variant: small-caps;
+    margin-right: 5%;
+}
+
+.side-menu li {
+    font-size: 24px;
+    padding: 10px 40px;
+    color: #f1f1f1;
+    display: flex;
+
+}
+/* changes colour while hovering  */
+.side-menu li:hover {
+    background: #f1f1f1;
+    color: #2d94e9;
+}
+/* for the center part of the container box  */
+.container {
+    position: absolute;
+    right: 0;
+    width: 75vw;
+    height: 100vh;
+    background:white;
+}
+/* for the title of the page top section  */
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 10vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+/* changes for the navigation bar  */
+.header .navbar {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+/* for the text on the navigation bar  */
+.header .navbar .toptext {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    font-size: 38px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-variant: small-caps;
+}
+/* images of the navigation bar  */
+.header .navbar .user img {
+    width: 40px;
+    height: 40px;
+}
+.header .navbar .admin-text{
+font-size: 25px;
+font-family: 'Times New Roman', Times, serif;
+font-variant: small-caps;
+padding: 2%;
+}
+
+.header .navbar .user .img-case {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.header .navbar .user .img-case img {
+    position: right;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* for the content inside the main container  */
+.container .content {
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+    background: white;
+}
+/* for the cards inside the container  */
+.container .content .cards {
+    padding: 20px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container .content .cards .card {
+    width: 250px;
+    height: 150px;
+    background: white;
+    border-radius: 25px;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* for the billing viewing of the clients  */
+.container .content .content-2 {
+    position:relative;
+    top:200px;
+    width: 60vw;
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    margin-left: 11%;
+}
+
+.container .content .content-2 .recent-payments {
+
+    min-height: 50vh;
+    flex: 5;
+    background: white;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .side-menu li {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .side-menu li span {
+        display: none;
+    }
+    .side-menu {
+        align-items: center;
+    }
+    .side-menu li img {
+        width: 40px;
+        height: 40px;
+    }
+    .side-menu li:hover {
+        background: #2d94e9;
+        padding: 8px 38px;
+        border: 2px solid white;
+    }
+}
+
+@media screen and (max-width:536px) {
+    .currentpage h1 {
+        font-size: 16px;
+    }
+    .container .content .cards {
+        justify-content: center;
+    }
+    .side-menu li img {
+        width: 30px;
+        height: 30px;
+    }
+    /* .container .content .content-2 .recent-payments table th:nth-child(2),
+    .container .content .content-2 .recent-payments table td:nth-child(2) {
+        display: none;
+    } */
+}
+.hero{
+    margin-top: 10px;
+}

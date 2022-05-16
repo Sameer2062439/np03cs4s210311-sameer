@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <!-- header -- top section of the dashboard page -->
+    <div class="header">
+        <div class="navbar">
+            <div class="toptext">
+               Water Billing System
+            </div>
+            <font class="admin-text">Admin</font>
+            <div class="user">
+
+                <div class="img-case">
+                    <img src="user.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- side menu of the dashboard page along with the content inside it -->
+    <div class="side-menu">
+        <div class="currentpage">
+            <h1>Dashboard</h1>
+        </div>
+        <ul>
+            <li><img src="dashboardp.png" alt="">&nbsp; <span>Dashboard</span> </li>
+            <li><a href="Client.html" style="color: white" ;  >Client </a>&nbsp;<span></span> </li>
+            <li><img src="billing.png" alt="">&nbsp;<span>Billing</span> </li>
+            <li><img src="logout.png" alt="">&nbsp;<span>Logout</span> </li>
+        </ul>
+    </div>
+<!-- for the center part of the page -->
+    <div class="container">
+
+<!-- box cards to display the number of clients, tax and rate  -->
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h1>6</h1>
+                        <h3>Clients</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="customer.png" alt="">
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <h1>5%</h1>
+                        <h3>Tax</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="tax.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>1.5%</h1>
+                        <h3>Rate</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="interest-rate.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- displays the recent payments of the clients with amount and rates  -->
+            <div class="content-2">
+                <div class="recent-payments">
+                    <div class="title">
+                        <h2>Recent Payments</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Rate</th>
+                            <th>Tax</th>
+                            <th>Amount</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr>
+                            <td>Rajjwal Ghising</td>
+                            <td>Ratnapark</td>
+                            <td>$1.5</td>
+                            <td>5%</td>
+                            <td>$15</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Aakash Subba</td>
+                            <td>Sanothimi</td>
+                            <td>$1.5</td>
+                            <td>5%</td>
+                            <td>$188</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Saphal Rajaura</td>
+                            <td>Bode</td>
+                            <td>$1.5</td>
+                            <td>5%</td>
+                            <td>$187</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Netra Ram Mahato</td>
+                            <td>Dillibazar</td>
+                            <td>$1.5</td>
+                            <td>5%</td>
+                            <td>$178</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Asmita Bhandari</td>
+                            <td>Ratnapark</td>
+                            <td>$1.5</td>
+                            <td>5%</td>
+                            <td>$12</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Trinetra Mahato</td>
+                            <td>Raksaul</td>
+                            <td>$1.5</td>
+                            <td>5%</td>
+                            <td>$420</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
